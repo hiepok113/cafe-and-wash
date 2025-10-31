@@ -1,16 +1,18 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import LoginPage from "./module/auth/page/Login"
-import RegisterPage from "./module/auth/page/Register"
+import LandingPage from "./module/landing/page/LandingPage"
+import MenuPage from "./module/menu/page/MenuPage"
+import BookingPage from "./module/booking/page/BookingPage"
+import ContactPage from "./module/contact/page/ContactPage"
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/menu" element={<MenuPage />} />
+        <Route path="/booking" element={<BookingPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </BrowserRouter>
   )
 }
-
-export default App

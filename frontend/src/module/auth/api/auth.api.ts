@@ -1,4 +1,4 @@
-import api from "../../../service/api"
+import api from "../../../service/axios"
 import { API_ENDPOINTS } from "../../../constants/endpoint"
 import { LoginForm } from "../schema/loginSchema"
 
